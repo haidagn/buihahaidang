@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 960px;
+    background: linear-gradient(-30deg, #33ccff, #81d5ff, #ffccff, #81d5ff);
+}
+ 
+.container
+{
+    width: 90%;
+    height: 85vh;
+    background: rgba(255, 255, 255, .4);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .info-link {
+    width: 20%;
+    height: 95%;
+    background-color: rgba(255, 255, 255, .4);
+    border-radius: 15px;
+}
+.container .info-space {
+    width: 3%;
+    height: 95%;
+}
+
+.container .disboard {
+    width: 70%;
+    height: 95%;
+    background-color: rgba(238, 175, 141, 0.3);
+    /* background-color: rgba(255, 255, 255, .4); */
+    border-radius: 15px;
+}
+
+/* info link chinh thuc */
+.container .info-link .name-img {
+    width: 80%;
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 20px;
+    /* justify-content: space-around; */
+}
+.container .info-link .name-img img {
+    height: 80px;
+    border-radius: 40px;
+}
+
+.container .info-link .name-img .text {
+    margin-left: 20px;
+    
+}
+
+.container .info-link .name-img .text h1 {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 5px;
+    color: rgb(70, 70, 70);
+}
+
+.container .info-link .name-img .text span {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 400;
+    color: rgb(70, 70, 70);
+}
+.info-network h2 {
+    width: 80%;
+    font-size: 20px;
+    font-family: 'Dosis', sans-serif;
+    padding-bottom: 2px;
+    padding-top: 20px;
+    color: rgba(0, 0, 0, 0.8);
+
+}
+
+.container .info-link .info-network {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+.container .info-link .info-network .btn-info {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(255, 255, 255, .4);
+    align-items: center;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 5px rgba(187, 187, 187, 0.097)
+}
+.container .info-link .info-network .btn-info a {
+    text-decoration: none;
+    color: rgb(49, 49, 49);
+    margin-left: 20px ;
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: 1px;
+}
+
+.container .info-link .info-network .btn-info a i {
+    padding-right: 20px;
+}
+
+.sdt a i {
+    color: green;
+}
+
+.fb a i {
+    color: rgb(22, 98, 240);
+}
+
+.int a i {
+    color: rgba(43, 43, 43, 0.755);
+}
+
+.ytb a i {
+    color: rgba(255, 0, 0, 0.755);
+}
+
+
+/* kinang css */
+.skills h2 {
+    width: 80%;
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-family: 'Dosis', sans-serif;
+    padding-bottom: 30px;
+    color: rgba(0, 0, 0, 0.8);
+
+}
+.skills {
+    width: 80%;
+    position: relative;
+    margin: 0 auto;
+}
+.skills ul {
+    padding: 0;
+    
+    
+}
+.skills ul > li {
+    margin-bottom: 30px;
+    background: #dedede;
+    height: 6px;
+    border-radius: 3px;
+}
+.skills ul > li em {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    position: relative;
+    top: -25px;
+}
+.skills ul > li span {
+    height: inherit;
+    background-color: #94c245;
+    background: linear-gradient(90deg, #76b82a, #aecd60);
+    position: absolute;
+}
+.skills .html5 {
+    width: 90%;
+    animation: html5 2s ease-out;
+}
+.skills .css3 {
+    width: 80%;
+    animation: css3 2s ease-out;
+}
+.skills .js {
+    width: 50%;
+    animation: js 2s ease-out;
+}
+.skills .jquery {
+    width: 60%;
+    animation: jquery 2s ease-out;
+}
+.skills .wordpress {
+    width: 50%;
+    animation: wordpress 2s ease-out;
+}
+.skills .magento {
+    width: 60%;
+    animation: magento 2s ease-out;
+}
+.skills .photoshop {
+    width: 90%;
+    animation: photoshop 2s ease-out;
+}
+.skills .illustrator {
+    width: 80%;
+    animation: illustrator 2s ease-out;
+}
+@keyframes html5 {
+    0% {
+        width: 0px;
+}
+    100% {
+        width: 90%;
+}
+}
+@keyframes css3 {
+    0% {
+        width: 0px;
+}
+    100% {
+        width: 80%;
+}
+}
+@keyframes js {
+    0% {
+        width: 0px;
+}
+    100% {
+        width: 50%;
+}
+}
+@keyframes jquery {
+    0% {
+        width: 0px;
+}
+    100% {
+        width: 60%;
+}
+}
+@keyframes wordpress {
+    0% {
+        width: 0px;
+}
+    100% {
+        width: 50%;
+}
+}
+@keyframes magento {
+    0% {
+        width: 0px;
+}
+    100% {
+        width: 60%;
+}
+}
+@keyframes photoshop {
+    0% {
+        width: 0px;
+}
+    100% {
+        width: 90%;
+}
+}
+@keyframes illustrator {
+    0% {
+        width: 0px;
+}
+    100% {
+        width: 80%;
+}
+}
+
+h2 {
+    
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+
+/* ==========disboard============== */
+.navbar {
+    display: flex;
+    width: 100%;
+    height: 6.4%;
+    background: rgba(255, 255, 255, .4);
+    border-radius: 15px 15px 0px 0px;
+    justify-content: center;
+}
+
+.navbar ul {
+    position: relative;
+    width: 90%;
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+}
+/* .navbar ul li {
+    position: relative;
+} */
+
+/* .navbar ul li b:nth-child(1) {
+    position: absolute;
+    left: -10px;
+    width: 10px;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    display: none;
+}
+
+.navbar ul li b:nth-child(1)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    border-radius: 0px 0px 10px 0px;
+    background: #F2DFEB;
+    background: #991d6c;
+}
+
+.navbar ul li b:nth-child(2) {
+    position: absolute;
+    right: -10px;
+    width: 10px;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    display: none;
+}
+
+.navbar ul li b:nth-child(2)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 0px 0px 10px;
+    background: #F2DFEB;
+}
+
+.navbar ul li.active b:nth-child(1),
+.navbar ul li.active b:nth-child(2) {
+    display: block;
+} */
+
+.navbar ul li a {
+    width: 100px;
+    display: block;
+    text-decoration: none;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 700;
+    color: rgba(34, 34, 34, 0.898);
+    letter-spacing: 1px;
+    line-height: 50px;
+    text-align: center;
+    transition: all .4s ease;
+}
+
+.navbar ul li a:hover {
+    background: rgba(255, 255, 255, 0.427);
+    border-radius: 10px;
+}
+
+.navbar ul li.active {
+    transform: translateY(20%);
+    background: rgba(255, 255, 255, 0.427);
+    border-radius: 10px 10px 0px 0px;
+    
+}
+
+.navbar ul li.active a {
+    color: rgba(209, 22, 22, 0.494);
+}
+
+/* content */
+
+.board {
+    display: none;
+    margin: 0 auto;
+    width: 95%;
+    height: 90%;
+    background: rgba(255, 255, 255, 0.427);
+    border-radius: 20px;
+    margin-top: 10px;
+}
+.board .row {
+    width: 95%;
+    height: 95%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    line-height: 700px;
+    font-family: 'Dosis', sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+    letter-spacing: 6px;
+}

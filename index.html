@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QLTK: HAIDANG</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="icon/fontawesome-5.15.3/css/all.css">
+    <link rel="stylesheet" href="javacript/cript.js">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- info link chinh thuc -->
+        <div class="info-link">
+            <div class="name-img">
+                <img src="image/avt.png" alt="Hai Dang">
+                <div class="text">
+                    <h1>BÙI HÀ HẢI ĐĂNG</h1>
+                    <span>Ngày Sinh: 09/08/2001</span>
+                </div>
+            </div>
+
+            <div class="info-network">
+                <h2>Liên Lạc </h2>
+                <div class="btn-info sdt">
+                    <a href="#"><i class="fas fa-phone-alt"></i>0******234</a>
+                </div>
+                <div class="btn-info fb">
+                    <a href=""><i class="fab fa-facebook"></i>Hai Dang</a>
+                </div>
+                <div class="btn-info int">
+                    <a href="#"><i class="fab fa-instagram"></i>@hai****</a>
+                </div>
+                <div class="btn-info ytb">
+                    <a href="#"><i class="fab fa-youtube"></i>Khoa Đăng</a>
+                </div>
+                <div class="btn-info gmail-canhan">
+                    <a href="#"><i class="fas fa-envelope"></i>*********@gmail.com</a>
+                </div>
+                <div class="btn-info gmail-forwork">
+                    <a href="#"><i class="far fa-envelope-open"></i>*********@gmail.com</a>
+                </div>
+            </div>
+
+            <div class="skills">
+                <h2>Kĩ Năng </h2>
+                <ul style="list-style: none;">
+                    <li><span class="html5"></span><em>HTML</em></li>
+                    <li><span class="css3"></span><em>CSS</em></li>
+                    <li><span class="js"></span><em>Javascript</em></li>
+                    <li><span class="wordpress"></span><em>Wordpress</em></li>
+                    <li><span class="photoshop"></span><em>Adobe Photoshop</em></li>
+                    <li><span class="illustrator"></span><em>Adobe Illustrator</em></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="info-space"></div>
+
+        <!-- dissboard -->
+        <div class="disboard">
+
+            <!-- navbar -->
+            <div class="navbar">
+                <ul>
+                    <li onclick="tabs(0)" class="tt list active">
+                        <b></b>
+                        <b></b>
+                        <a href="#">Thông Tin</a>
+                    </li>
+                    <li onclick="tabs(1)" class="tk list">
+                        <b></b>
+                        <b></b>
+                        <a href="#">Tài Khoản</a>
+                    </li>
+                    <li onclick="tabs(2)" class="faceb list">
+                        <b></b>
+                        <b></b>
+                        <a href="#">Facebook</a>
+                    </li>
+                    <li onclick="tabs(3)" class="gg list">
+                        <b></b>
+                        <b></b>
+                        <a href="#">Google</a>
+                    </li>
+                    <li onclick="tabs(4)" class="link list">
+                        <b></b>
+                        <b></b>
+                        <a href="#">Link</a>
+                    </li>
+                    <li onclick="tabs(5)" class="khac list">
+                        <b></b>
+                        <b></b>
+                        <a href="#">Khác</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- end navbar -->
+
+            <!-- content -->
+            <div class="tt1 board">
+                <div class="row">Thông Tin</div>
+            </div>
+            <div class="tk1 board">
+                <div class="row">Tài Khoản</div>
+            </div>
+            <div class="faceb1 board">
+                <div class="row">Facebook</div>
+            </div>
+            <div class="gg1 board">
+                <div class="row">Google</div>
+            </div>
+            <div class="link1 board">
+                <div class="row">Link</div>
+            </div>
+            <div class="khac1 board">
+                <div class="row">Khác</div>
+            </div>
+            <!-- end content -->
+        </div>
+    </div>
+</body>
+<script>
+    $('.navbar ul li').click(function () {
+        $(this).addClass('active').siblings().removeClass('active');
+    })
+
+    // $('.navbar ul li').click(function () {
+    //     $('.modau').addClass('bl');
+    // })
+
+    const list = document.querySelectorAll('.navbar ul li');
+    const board = document.querySelectorAll('.board');
+
+    function tabs(panelIndex) {
+        board.forEach(function (node) {
+            node.style.display = 'none';
+        });
+        board[panelIndex].style.display = 'block';
+    }
+    tabs(0);
+</script>
+
+</html>
